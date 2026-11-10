@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Discovery Project: DIY Macro Keyboard | Alessandro De Cesare</title>
-  <link rel="stylesheet" href="css/style.css?v=4">
+  <link rel="stylesheet" href="css/style.css?v=5">
 </head>
 <body>
   <header class="site-header"></header>
@@ -18,7 +18,7 @@
   <section class="section">
     <div class="narrow">
       <figure>
-        <img src="assets/img/macropad-photo-1.jpg?v=4" alt="My macropad with the case printed and keycaps installed">
+        <img src="assets/img/macropad-photo-1.jpg?v=5" alt="My macropad with the case printed and keycaps installed">
         <figcaption>The keyboard so far. The case is printed and the switches and keycaps are in. Photo by me.</figcaption>
       </figure>
 
@@ -37,7 +37,7 @@
       <p>I chose a Raspberry Pi Pico because it is cheap, well documented and can act as a USB keyboard. I picked Cherry MX Black switches, which are linear and a little heavy so I do not press them by accident. I made the case with the Parametric Macropad customizer on MakerWorld by jkrishna and printed it at the Hive makerspace. It prints in two parts. A top plate holds the switches and a bottom tray holds the Pico.</p>
 
       <figure>
-        <img src="assets/img/macropad-photo-2.jpg?v=4" alt="The printed case, the Pico and Cherry MX switches during assembly">
+        <img src="assets/img/macropad-photo-2.jpg?v=5" alt="The printed case, the Pico and Cherry MX switches during assembly">
         <figcaption>Assembly in progress. Photo by me.</figcaption>
       </figure>
 
@@ -45,18 +45,18 @@
       <p>Each switch is just a button that closes a circuit. Once I solder them to the Pico, each pin will read 1 when a key is up and 0 when it is pressed. The code will scan the keys, ignore bounces and send the matching shortcut over USB. The computer will see a normal keyboard, so no drivers are needed.</p>
 
       <figure>
-        <img src="assets/img/macropad-system.svg?v=4" alt="Block diagram: key switches to GPIO pins to Raspberry Pi Pico to computer over USB">
+        <img src="assets/img/macropad-system.svg?v=5" alt="Block diagram: key switches to GPIO pins to Raspberry Pi Pico to computer over USB">
         <figcaption>How a key press will travel from the switch to my laptop.</figcaption>
       </figure>
 
       <h2>What's Next</h2>
-      <p>Next I will solder the switches, program the Pico and test every key. After that I want to add a volume knob and RGB lighting. Later I would like to design my own circuit board so there are no loose wires at all.</p>
+      <p>The next step is to solder the switches to the Raspberry Pi Pico and program it so the keys work. Once every key does its job, I have a few ideas for the future, like adding a volume knob and RGB lighting.</p>
 
       <p class="center" style="margin-top:2.5rem"><a class="btn" href="projects.html">Back to all projects</a></p>
     </div>
   </section>
 
   <footer class="site-footer"></footer>
-  <script src="js/site.js?v=4"></script>
+  <script src="js/site.js?v=5"></script>
 </body>
 </html>

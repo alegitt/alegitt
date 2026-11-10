@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Nunito, Segoe UI, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Times New Roman, Times, serif">
   <rect width="800" height="500" fill="#eaf0f6"/>
   <!-- maze walls -->
   <g stroke="#003057" stroke-width="10" stroke-linecap="round" fill="none">
@@ -22,6 +22,6 @@
     <circle r="12" fill="#003057"/>
     <circle cy="-22" r="4" fill="#eaaa00"/>
   </g>
-  <text x="400" y="38" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="24" fill="#003057">iRobot Create 3 labs</text>
+  <text x="400" y="38" text-anchor="middle" font-family="Times New Roman, Times, serif" font-size="24" fill="#003057">iRobot Create 3 labs</text>
   <text x="400" y="488" text-anchor="middle" font-size="13" fill="#5b6270">7 infrared sensors guide the robot through the maze</text>
 </svg>

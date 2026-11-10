@@ -5,17 +5,17 @@
   <rect width="900" height="360" fill="#ffffff"/>
   <text x="450" y="42" text-anchor="middle" font-family="Oswald, Arial Narrow, sans-serif" font-size="24" fill="#003057" letter-spacing="2">HOW A KEY PRESS BECOMES A SHORTCUT</text>
   <g font-size="16" text-anchor="middle">
-    <rect x="30" y="110" width="170" height="130" rx="12" fill="#fdf3d4" stroke="#b3a369" stroke-width="2"/>
+    <rect x="30" y="110" width="170" height="130" rx="12" fill="#eaf0f6" stroke="#b3a369" stroke-width="2"/>
     <text x="115" y="160" font-weight="700" fill="#003057">16 Key Switches</text>
     <text x="115" y="186" fill="#5b6270" font-size="14">Cherry MX Black</text>
     <text x="115" y="206" fill="#5b6270" font-size="14">close a circuit</text>
 
-    <rect x="255" y="110" width="170" height="130" rx="12" fill="#fdf3d4" stroke="#b3a369" stroke-width="2"/>
+    <rect x="255" y="110" width="170" height="130" rx="12" fill="#eaf0f6" stroke="#b3a369" stroke-width="2"/>
     <text x="340" y="160" font-weight="700" fill="#003057">GPIO Pins</text>
     <text x="340" y="186" fill="#5b6270" font-size="14">input with pull-up</text>
     <text x="340" y="206" fill="#5b6270" font-size="14">reads 1 or 0</text>
 
-    <rect x="480" y="110" width="170" height="130" rx="12" fill="#f6c945" stroke="#b3a369" stroke-width="2"/>
+    <rect x="480" y="110" width="170" height="130" rx="12" fill="#eaaa00" stroke="#b3a369" stroke-width="2"/>
     <text x="565" y="160" font-weight="700" fill="#1d2430">Raspberry Pi Pico</text>
     <text x="565" y="186" fill="#1d2430" font-size="14">scans keys, debounces</text>
     <text x="565" y="206" fill="#1d2430" font-size="14">looks up the macro</text>

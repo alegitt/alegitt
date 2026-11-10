@@ -1,13 +1,14 @@
 /* ePortfolio styles. Colors and fonts live in :root so they are easy to change. */
 :root {
-  --cream: #fdf3d4;
-  --gold: #f6c945;
+  --cream: #eaf0f6;         /* light navy tint for alternate sections */
+  --gold: #eaaa00;          /* Georgia Tech Buzz Gold accent */
+  --navy-dark: #001f3a;
   --gold-deep: #b3a369;     /* Georgia Tech Tech Gold */
   --navy: #003057;          /* Georgia Tech Navy */
   --ink: #1d2430;
   --muted: #5b6270;
   --white: #ffffff;
-  --line: #e6dcc0;
+  --line: #d3dde8;
   --todo: #ffe3e3;
   --radius: 4px;
   --max: 1120px;
@@ -36,29 +37,29 @@ p { margin: 0 0 1em; }
 .todo { background: var(--todo); padding: 0 .25em; border-radius: 3px; }
 
 /* ---------- Navigation ---------- */
-.site-header { background: var(--cream); position: sticky; top: 0; z-index: 10; border-bottom: 1px solid var(--line); }
+.site-header { background: var(--navy); position: sticky; top: 0; z-index: 10; border-bottom: 3px solid var(--gold-deep); }
 .nav { max-width: var(--max); margin: 0 auto; display: flex; align-items: center; justify-content: center; gap: 2.2rem; padding: 1.1rem 1.5rem; flex-wrap: wrap; }
 .nav a {
-  text-decoration: none; color: var(--ink); text-transform: uppercase; letter-spacing: .18em;
+  text-decoration: none; color: #dfe6ee; text-transform: uppercase; letter-spacing: .18em;
   font-size: .82rem; padding: .35rem 0; border-top: 2px solid transparent;
 }
-.nav a:hover { color: var(--navy); }
-.nav a.active { font-weight: 800; border-top-color: var(--ink); }
+.nav a:hover { color: var(--white); }
+.nav a.active { font-weight: 800; color: var(--white); border-top-color: var(--gold); }
 .nav-toggle { display: none; }
 
 /* ---------- Hero ---------- */
 .hero { background: var(--cream); padding: 3.5rem 1.5rem 4rem; }
 .hero-inner { max-width: var(--max); margin: 0 auto; display: grid; grid-template-columns: 2fr 3fr; min-height: 460px; box-shadow: 0 10px 30px rgba(0,0,0,.06); }
-.hero-text { background: var(--gold); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 2.5rem; }
-.hero-text h1 { font-size: clamp(2.8rem, 6vw, 4.6rem); margin: 0; color: var(--ink); text-transform: uppercase; line-height: 1.05; }
-.tagline { margin-top: 1rem; font-size: 1.25rem; color: var(--ink); }
-.tagline span { color: var(--navy); font-weight: 700; }
+.hero-text { background: var(--navy); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 2.5rem; }
+.hero-text h1 { font-size: clamp(2.8rem, 6vw, 4.6rem); margin: 0; color: var(--white); text-transform: uppercase; line-height: 1.05; }
+.tagline { margin-top: 1rem; font-size: 1.25rem; color: #dfe6ee; }
+.tagline span { color: var(--gold-deep); font-weight: 700; }
 .hero-photo { background: #ccc center / cover no-repeat; min-height: 320px; }
 
 /* Smaller page banners for inner pages */
-.banner { background: var(--cream); padding: 3.5rem 1.5rem 3rem; text-align: center; }
-.banner h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); margin: 0; text-transform: uppercase; color: var(--ink); }
-.banner p { color: var(--muted); max-width: 640px; margin: .7rem auto 0; font-size: 1.1rem; }
+.banner { background: var(--navy); padding: 3.5rem 1.5rem 3rem; text-align: center; }
+.banner h1 { font-size: clamp(2.4rem, 5vw, 3.6rem); margin: 0; text-transform: uppercase; color: var(--white); }
+.banner p { color: #c9d4e0; max-width: 640px; margin: .7rem auto 0; font-size: 1.1rem; }
 
 /* ---------- Sections ---------- */
 .section { padding: 4rem 1.5rem; }
@@ -71,13 +72,13 @@ p { margin: 0 0 1em; }
 .btn-stack { display: flex; flex-direction: column; align-items: center; gap: 1rem; }
 .btn-row { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
 .btn {
-  display: inline-block; border: 1.5px solid var(--ink); color: var(--ink); text-decoration: none;
+  display: inline-block; border: 1.5px solid var(--navy); color: var(--navy); text-decoration: none;
   text-transform: uppercase; letter-spacing: .18em; font-size: .8rem; padding: .7rem 1.4rem;
   background: var(--white); transition: background .15s, color .15s;
 }
-.btn:hover { background: var(--ink); color: var(--white); }
+.btn:hover { background: var(--navy); color: var(--white); }
 .btn.solid { background: var(--navy); color: var(--white); border-color: var(--navy); }
-.btn.solid:hover { background: var(--ink); border-color: var(--ink); }
+.btn.solid:hover { background: var(--navy-dark); border-color: var(--gold-deep); }
 
 /* Split blocks: image on one side, text on the other */
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; }
@@ -92,7 +93,7 @@ p { margin: 0 0 1em; }
 .card-body h3 { margin-top: 0; }
 .card-body p { color: var(--muted); flex: 1; }
 .tag { display: inline-block; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; background: var(--cream); color: var(--navy); padding: .2rem .6rem; border-radius: 99px; margin: 0 .3rem .6rem 0; font-weight: 700; }
-.tag.feature { background: var(--navy); color: var(--white); }
+.tag.feature { background: var(--gold-deep); color: var(--navy-dark); }
 
 /* Figures */
 figure { margin: 2rem 0; }
@@ -110,9 +111,9 @@ figcaption { font-size: .9rem; color: var(--muted); margin-top: .6rem; text-alig
 .chips span { border: 1px solid var(--line); background: var(--white); padding: .35rem .9rem; border-radius: 99px; font-size: .92rem; }
 
 /* Timeline */
-.timeline { border-left: 3px solid var(--gold); margin: 2rem 0; padding-left: 2rem; }
+.timeline { border-left: 3px solid var(--navy); margin: 2rem 0; padding-left: 2rem; }
 .timeline .step { position: relative; margin-bottom: 2rem; }
-.timeline .step::before { content: ""; position: absolute; left: -2.6rem; top: .35rem; width: 1rem; height: 1rem; border-radius: 50%; background: var(--navy); border: 3px solid var(--gold); }
+.timeline .step::before { content: ""; position: absolute; left: -2.6rem; top: .35rem; width: 1rem; height: 1rem; border-radius: 50%; background: var(--navy); border: 3px solid var(--gold-deep); }
 .timeline .when { font-family: var(--head); text-transform: uppercase; letter-spacing: .1em; color: var(--gold-deep); font-size: .95rem; }
 .timeline h3 { margin: .1rem 0 .3rem; }
 
@@ -120,9 +121,9 @@ figcaption { font-size: .9rem; color: var(--muted); margin-top: .6rem; text-alig
 .resume-frame { width: 100%; height: 900px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--cream); }
 
 /* Footer */
-.site-footer { background: var(--navy); color: #dfe6ee; padding: 3rem 1.5rem; text-align: center; }
-.site-footer h2 { color: var(--gold); font-size: 1.6rem; }
-.site-footer a { color: var(--gold); }
+.site-footer { background: var(--navy-dark); color: #dfe6ee; padding: 3rem 1.5rem; text-align: center; }
+.site-footer h2 { color: var(--gold-deep); font-size: 1.6rem; }
+.site-footer a { color: var(--gold-deep); }
 .site-footer .links { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; margin: 1rem 0; }
 .site-footer small { color: #9fb0c2; }
 
@@ -132,7 +133,7 @@ figcaption { font-size: .9rem; color: var(--muted); margin-top: .6rem; text-alig
   .split.reverse > :first-child { order: 0; }
   .hero-photo { min-height: 340px; }
   .nav { justify-content: space-between; }
-  .nav-toggle { display: block; background: none; border: 1.5px solid var(--ink); font: inherit; padding: .3rem .8rem; letter-spacing: .15em; text-transform: uppercase; font-size: .75rem; }
+  .nav-toggle { display: block; background: none; color: var(--white); border: 1.5px solid #dfe6ee; font: inherit; padding: .3rem .8rem; letter-spacing: .15em; text-transform: uppercase; font-size: .75rem; }
   .nav-links { display: none; width: 100%; flex-direction: column; gap: .8rem; padding-top: .8rem; }
   .nav-links.open { display: flex; }
   .resume-frame { height: 600px; }
@@ -140,3 +141,6 @@ figcaption { font-size: .9rem; color: var(--muted); margin-top: .6rem; text-alig
 @media (min-width: 821px) { .nav-links { display: flex; gap: 2.2rem; } .nav-brand { display: none; } }
 
 .narrow > img { margin: 2rem auto; }
+
+.nav-brand { color: var(--white) !important; font-weight: 800; }
+.hero-inner { border-bottom: 6px solid var(--gold-deep); }

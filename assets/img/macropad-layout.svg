@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Nunito, Segoe UI, sans-serif">
-  <rect width="800" height="500" fill="#fdf3d4"/>
+  <rect width="800" height="500" fill="#eaf0f6"/>
   <text x="400" y="44" text-anchor="middle" font-family="Oswald, Arial Narrow, sans-serif" font-size="26" fill="#003057" letter-spacing="2">MACROPAD TOP VIEW</text>
   <!-- case -->
   <rect x="215" y="75" width="370" height="380" rx="22" fill="#1d2430"/>
@@ -11,7 +11,7 @@
     <rect x="250" y="270" width="70" height="70" rx="10"/><rect x="330" y="270" width="70" height="70" rx="10"/><rect x="410" y="270" width="70" height="70" rx="10"/><rect x="490" y="270" width="70" height="70" rx="10"/>
     <rect x="250" y="350" width="70" height="70" rx="10"/><rect x="330" y="350" width="70" height="70" rx="10"/><rect x="410" y="350" width="70" height="70" rx="10"/><rect x="490" y="350" width="70" height="70" rx="10"/>
   </g>
-  <g fill="#f6c945" font-size="13" text-anchor="middle">
+  <g fill="#eaaa00" font-size="13" text-anchor="middle">
     <text x="285" y="150">COPY</text><text x="365" y="150">PASTE</text><text x="445" y="150">UNDO</text><text x="525" y="150">REDO</text>
     <text x="285" y="230">MUTE</text><text x="365" y="230">VOL−</text><text x="445" y="230">VOL+</text><text x="525" y="230">PLAY</text>
     <text x="285" y="310">SHOT</text><text x="365" y="310">TERM</text><text x="445" y="310">CODE</text><text x="525" y="310">WEB</text>

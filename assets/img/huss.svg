@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#fdf3d4"/>
+  <rect y="340" width="800" height="160" fill="#b3a369"/>
+  <g stroke="#1d2430" stroke-width="3" opacity=".25"><line x1="0" y1="380" x2="800" y2="380"/><line x1="0" y1="430" x2="800" y2="430"/></g>
+  <!-- runner -->
+  <g fill="#003057">
+    <circle cx="520" cy="190" r="26"/>
+    <path d="M510 220 l-30 70 l40 10 l20-55z"/>
+    <path d="M500 240 l-55-15" stroke="#003057" stroke-width="14" stroke-linecap="round"/>
+    <path d="M525 235 l50 25" stroke="#003057" stroke-width="14" stroke-linecap="round"/>
+    <path d="M495 290 l-45 55" stroke="#003057" stroke-width="16" stroke-linecap="round"/>
+    <path d="M515 295 l40 45" stroke="#003057" stroke-width="16" stroke-linecap="round"/>
+  </g>
+  <!-- chaser -->
+  <g fill="#c0392b">
+    <circle cx="230" cy="200" r="30"/>
+    <path d="M215 235 l-25 75 l45 10 l25-60z"/>
+    <path d="M240 250 l70-5" stroke="#c0392b" stroke-width="15" stroke-linecap="round"/>
+    <path d="M205 305 l-35 40" stroke="#c0392b" stroke-width="17" stroke-linecap="round"/>
+    <path d="M230 312 l35 33" stroke="#c0392b" stroke-width="17" stroke-linecap="round"/>
+  </g>
+  <g stroke="#1d2430" stroke-width="4" stroke-linecap="round" opacity=".4"><line x1="610" y1="180" x2="680" y2="180"/><line x1="620" y1="215" x2="710" y2="215"/><line x1="610" y1="250" x2="670" y2="250"/></g>
+  <text x="400" y="90" text-anchor="middle" font-family="Oswald, Arial Narrow, sans-serif" font-size="50" fill="#1d2430" letter-spacing="4">HUSS FOR YOUR LIFE</text>
+</svg>

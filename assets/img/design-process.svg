@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" font-family="Nunito, Segoe UI, sans-serif">
+  <rect width="900" height="220" fill="#fdf3d4"/>
+  <g text-anchor="middle">
+    <circle cx="95" cy="105" r="62" fill="#003057"/><text x="95" y="102" fill="#fff" font-weight="700" font-size="17">Empathize</text><text x="95" y="124" fill="#f6c945" font-size="12">who needs it?</text>
+    <circle cx="272" cy="105" r="62" fill="#1f4a73"/><text x="272" y="102" fill="#fff" font-weight="700" font-size="17">Define</text><text x="272" y="124" fill="#f6c945" font-size="12">the real problem</text>
+    <circle cx="450" cy="105" r="62" fill="#b3a369"/><text x="450" y="102" fill="#1d2430" font-weight="700" font-size="17">Ideate</text><text x="450" y="124" fill="#1d2430" font-size="12">pick parts and plan</text>
+    <circle cx="628" cy="105" r="62" fill="#f6c945"/><text x="628" y="102" fill="#1d2430" font-weight="700" font-size="17">Prototype</text><text x="628" y="124" fill="#1d2430" font-size="12">print, wire, code</text>
+    <circle cx="805" cy="105" r="62" fill="#1d2430"/><text x="805" y="102" fill="#fff" font-weight="700" font-size="17">Test</text><text x="805" y="124" fill="#f6c945" font-size="12">use it and improve</text>
+  </g>
+  <g stroke="#1d2430" stroke-width="3" fill="none">
+    <path d="M160 105h45"/><path d="M337 105h45"/><path d="M515 105h45"/><path d="M693 105h45"/>
+    <path d="M805 170 C 805 210, 95 210, 95 170" stroke-dasharray="6 6" stroke="#5b6270"/>
+  </g>
+  <text x="450" y="212" text-anchor="middle" font-size="12" fill="#5b6270">repeat when testing shows something to fix</text>
+</svg>

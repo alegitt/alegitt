@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Nunito, Segoe UI, sans-serif">
+  <rect width="800" height="500" fill="#fdf3d4"/>
+  <text x="400" y="44" text-anchor="middle" font-family="Oswald, Arial Narrow, sans-serif" font-size="26" fill="#003057" letter-spacing="2">MACROPAD TOP VIEW</text>
+  <!-- case -->
+  <rect x="215" y="75" width="370" height="380" rx="22" fill="#1d2430"/>
+  <rect x="230" y="90" width="340" height="350" rx="14" fill="#2b3442"/>
+  <!-- 4x4 keys -->
+  <g fill="#111" stroke="#3d4757" stroke-width="2">
+    <rect x="250" y="110" width="70" height="70" rx="10"/><rect x="330" y="110" width="70" height="70" rx="10"/><rect x="410" y="110" width="70" height="70" rx="10"/><rect x="490" y="110" width="70" height="70" rx="10"/>
+    <rect x="250" y="190" width="70" height="70" rx="10"/><rect x="330" y="190" width="70" height="70" rx="10"/><rect x="410" y="190" width="70" height="70" rx="10"/><rect x="490" y="190" width="70" height="70" rx="10"/>
+    <rect x="250" y="270" width="70" height="70" rx="10"/><rect x="330" y="270" width="70" height="70" rx="10"/><rect x="410" y="270" width="70" height="70" rx="10"/><rect x="490" y="270" width="70" height="70" rx="10"/>
+    <rect x="250" y="350" width="70" height="70" rx="10"/><rect x="330" y="350" width="70" height="70" rx="10"/><rect x="410" y="350" width="70" height="70" rx="10"/><rect x="490" y="350" width="70" height="70" rx="10"/>
+  </g>
+  <g fill="#f6c945" font-size="13" text-anchor="middle">
+    <text x="285" y="150">COPY</text><text x="365" y="150">PASTE</text><text x="445" y="150">UNDO</text><text x="525" y="150">REDO</text>
+    <text x="285" y="230">MUTE</text><text x="365" y="230">VOL−</text><text x="445" y="230">VOL+</text><text x="525" y="230">PLAY</text>
+    <text x="285" y="310">SHOT</text><text x="365" y="310">TERM</text><text x="445" y="310">CODE</text><text x="525" y="310">WEB</text>
+    <text x="285" y="390">F13</text><text x="365" y="390">F14</text><text x="445" y="390">F15</text><text x="525" y="390">F16</text>
+  </g>
+  <!-- usb -->
+  <rect x="385" y="60" width="30" height="18" rx="3" fill="#b3a369"/>
+  <!-- labels -->
+  <g font-size="15" fill="#1d2430">
+    <line x1="590" y1="145" x2="650" y2="120" stroke="#003057" stroke-width="2"/>
+    <text x="655" y="118">Cherry MX switch</text><text x="655" y="136" fill="#5b6270" font-size="13">+ XDA keycap</text>
+    <line x1="415" y1="68" x2="650" y2="68" stroke="#003057" stroke-width="2"/>
+    <text x="655" y="64">Micro USB to PC</text>
+    <line x1="215" y1="300" x2="150" y2="300" stroke="#003057" stroke-width="2"/>
+    <text x="145" y="295" text-anchor="end">3D printed case</text><text x="145" y="313" text-anchor="end" fill="#5b6270" font-size="13">printed at the Hive</text>
+    <line x1="230" y1="430" x2="150" y2="460" stroke="#003057" stroke-width="2"/>
+    <text x="145" y="465" text-anchor="end">Pico inside</text>
+  </g>
+  <text x="400" y="485" text-anchor="middle" font-size="13" fill="#5b6270">Example key map. Every key can be reprogrammed.</text>
+</svg>

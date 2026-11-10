@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Your Name</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header"></header>
+
+  <section class="banner">
+    <h1>Projects</h1>
+    <p>Hardware, software and games. This page grows as I do.</p>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <!--
+        TO ADD A PROJECT:
+        1. Copy project-macropad.html to project-yourname.html and change the text and images.
+        2. Copy one <article class="card"> block below and point its link at the new page.
+        Newest projects go first.
+      -->
+      <div class="cards">
+        <article class="card">
+          <img src="assets/img/macropad-layout.svg" alt="Drawing of my 16 key macropad">
+          <div class="card-body">
+            <div><span class="tag feature">Discovery Project</span><span class="tag">Hardware</span></div>
+            <h3>DIY Macro Keyboard</h3>
+            <p>A 16 key programmable keyboard built on a Raspberry Pi Pico with Cherry MX switches and a case I 3D printed at the Hive. One key press runs a full shortcut.</p>
+            <a class="btn" href="project-macropad.html">Read More</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/img/saltborne.svg" alt="Saltborne title art with a pirate ship at sunset">
+          <div class="card-body">
+            <div><span class="tag">Game Dev</span><span class="tag">In Progress</span></div>
+            <h3>Saltborne</h3>
+            <p>A large multiplayer pirate game in Roblox. Crews share one ship, loot islands and battle other crews with cannons. I wrote the full design document and started with a sailing prototype. Models are built in Blender.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="assets/img/huss.svg" alt="Huss For Your Life title art with a runner being chased">
+          <div class="card-body">
+            <div><span class="tag">Game Dev</span><span class="tag">In Progress</span></div>
+            <h3>Huss For Your Life</h3>
+            <p>A Roblox chase game where you run from a character through level after level. Players train on treadmills, unlock shoes, hatch pets and rebirth to get faster. Built to run on PC, mobile, console and VR.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="narrow center">
+      <h2>How I Approach a Project</h2>
+      <p>Every project on this page follows the same loop. I figure out who it is for. I define the real problem. I plan and pick parts. I build a rough version fast. Then I test it and improve it.</p>
+      <img src="assets/img/design-process.svg" alt="Design thinking loop: empathize, define, ideate, prototype, test">
+    </div>
+  </section>
+
+  <footer class="site-footer"></footer>
+  <script src="js/site.js"></script>
+</body>
+</html>

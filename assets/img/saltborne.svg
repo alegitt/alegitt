@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs><linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6c945"/><stop offset="1" stop-color="#f59e5b"/></linearGradient></defs>
+  <rect width="800" height="320" fill="url(#sky)"/>
+  <circle cx="600" cy="250" r="70" fill="#fff3c4" opacity=".9"/>
+  <path d="M90 300 q60-70 120 0z" fill="#1f4a73" opacity=".6"/>
+  <rect y="290" width="800" height="210" fill="#003057"/>
+  <g fill="none" stroke="#2f6aa0" stroke-width="4" stroke-linecap="round">
+    <path d="M40 360 q30-15 60 0 t60 0"/><path d="M520 400 q30-15 60 0 t60 0"/><path d="M260 450 q30-15 60 0 t60 0"/><path d="M620 340 q30-15 60 0"/>
+  </g>
+  <!-- ship -->
+  <path d="M250 300 h300 l-40 60 h-220z" fill="#5a3a22"/>
+  <rect x="395" y="110" width="10" height="190" fill="#3d2716"/>
+  <path d="M405 125 q90 50 0 150z" fill="#fdf3d4"/>
+  <path d="M395 140 q-80 45 0 130z" fill="#fdf3d4"/>
+  <path d="M405 110 l40 12 l-40 12z" fill="#1d2430"/>
+  <circle cx="300" cy="322" r="6" fill="#1d2430"/><circle cx="340" cy="322" r="6" fill="#1d2430"/><circle cx="460" cy="322" r="6" fill="#1d2430"/><circle cx="500" cy="322" r="6" fill="#1d2430"/>
+  <text x="400" y="470" text-anchor="middle" font-family="Oswald, Arial Narrow, sans-serif" font-size="46" fill="#f6c945" letter-spacing="6">SALTBORNE</text>
+</svg>

@@ -1,12 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" font-family="Nunito, Segoe UI, sans-serif">
   <rect width="900" height="300" fill="#ffffff"/>
   <text x="450" y="40" text-anchor="middle" font-family="Oswald, Arial Narrow, sans-serif" font-size="24" fill="#003057" letter-spacing="2">MY ROADMAP</text>
-  <path d="M60 170 C 200 90, 300 250, 450 170 S 700 90, 840 170" fill="none" stroke="#eaaa00" stroke-width="10" stroke-linecap="round"/>
+  <path d="M60 170 C 200 90, 300 250, 450 170 S 700 90, 840 170" fill="none" stroke="#d3dde8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M60 170 C 140 124, 200 140, 255 168" fill="none" stroke="#eaaa00" stroke-width="10" stroke-linecap="round"/>
   <g text-anchor="middle">
-    <circle cx="60" cy="170" r="16" fill="#003057"/><text x="60" y="215" font-weight="700" font-size="15" fill="#003057">Now</text><text x="60" y="235" font-size="12" fill="#5b6270">foundations</text>
-    <circle cx="255" cy="168" r="16" fill="#003057"/><text x="255" y="125" font-weight="700" font-size="15" fill="#003057">Year 2</text><text x="255" y="105" font-size="12" fill="#5b6270">labs + first internship</text>
-    <circle cx="450" cy="170" r="16" fill="#003057"/><text x="450" y="215" font-weight="700" font-size="15" fill="#003057">Year 3</text><text x="450" y="235" font-size="12" fill="#5b6270">co-op or research</text>
+    <circle cx="60" cy="170" r="14" fill="#b3a369"/><text x="60" y="215" font-weight="700" font-size="15" fill="#003057">Year 1</text><text x="60" y="235" font-size="12" fill="#5b6270">done</text>
+    <circle cx="255" cy="168" r="22" fill="#003057" stroke="#eaaa00" stroke-width="5"/><text x="255" y="122" font-weight="700" font-size="16" fill="#003057">Year 2 · Now</text><text x="255" y="102" font-size="12" fill="#5b6270">internship search</text>
+    <circle cx="450" cy="170" r="16" fill="#003057"/><text x="450" y="215" font-weight="700" font-size="15" fill="#003057">Year 3</text><text x="450" y="235" font-size="12" fill="#5b6270">internship or co-op</text>
     <circle cx="645" cy="128" r="16" fill="#003057"/><text x="645" y="88" font-weight="700" font-size="15" fill="#003057">Year 4</text><text x="645" y="68" font-size="12" fill="#5b6270">senior design + offer</text>
-    <circle cx="840" cy="170" r="20" fill="#b3a369"/><text x="840" y="215" font-weight="700" font-size="15" fill="#003057">Career</text><text x="830" y="235" font-size="12" fill="#5b6270">real products</text>
+    <circle cx="840" cy="170" r="20" fill="#b3a369"/><text x="835" y="215" font-weight="700" font-size="15" fill="#003057">Career</text><text x="830" y="235" font-size="12" fill="#5b6270">May 2029</text>
   </g>
 </svg>

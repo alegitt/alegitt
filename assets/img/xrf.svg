@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Nunito, Segoe UI, sans-serif">
+  <rect width="800" height="500" fill="#ffffff"/>
+  <text x="400" y="44" text-anchor="middle" font-family="Oswald, Arial Narrow, sans-serif" font-size="24" fill="#003057" letter-spacing="2">XRF SULFUR ANALYSIS</text>
+  <!-- axes -->
+  <g stroke="#1d2430" stroke-width="2"><line x1="90" y1="410" x2="740" y2="410"/><line x1="90" y1="410" x2="90" y2="80"/></g>
+  <text x="415" y="450" text-anchor="middle" font-size="15" fill="#5b6270">X-ray energy</text>
+  <text x="50" y="245" text-anchor="middle" font-size="15" fill="#5b6270" transform="rotate(-90 50 245)">Counts</text>
+  <!-- spectrum -->
+  <path d="M90 395 C 150 392, 190 388, 230 386 C 260 385, 280 380, 300 370 C 315 340, 322 150, 335 140 C 348 150, 352 340, 370 372 C 400 384, 440 380, 470 376 C 490 372, 500 320, 512 318 C 524 320, 532 370, 552 378 C 600 386, 680 392, 740 396"
+        fill="none" stroke="#003057" stroke-width="4"/>
+  <path d="M300 370 C 315 340, 322 150, 335 140 C 348 150, 352 340, 370 372 Z" fill="#eaaa00" opacity=".35"/>
+  <line x1="335" y1="140" x2="420" y2="110" stroke="#b3a369" stroke-width="2"/>
+  <text x="425" y="106" font-size="16" fill="#003057" font-weight="700">Sulfur Kα peak</text>
+  <text x="425" y="126" font-size="13" fill="#5b6270">peak area tracks sulfur content</text>
+  <text x="512" y="305" text-anchor="middle" font-size="13" fill="#5b6270">other elements</text>
+  <!-- compare box -->
+  <rect x="520" y="160" width="200" height="90" rx="8" fill="#eaf0f6" stroke="#b3a369"/>
+  <text x="620" y="190" text-anchor="middle" font-size="14" fill="#003057" font-weight="700">XRF result</text>
+  <text x="620" y="212" text-anchor="middle" font-size="13" fill="#5b6270">compared against</text>
+  <text x="620" y="232" text-anchor="middle" font-size="14" fill="#003057" font-weight="700">combustion method</text>
+  <text x="400" y="485" text-anchor="middle" font-size="12" fill="#5b6270">Illustration of a typical spectrum. Not real sample data.</text>
+</svg>

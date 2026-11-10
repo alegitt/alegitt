@@ -144,3 +144,5 @@ figcaption { font-size: .9rem; color: var(--muted); margin-top: .6rem; text-alig
 
 .nav-brand { color: var(--white) !important; font-weight: 800; }
 .hero-inner { border-bottom: 6px solid var(--gold-deep); }
+.card-body .btn { align-self: flex-start; }
+.hero-inner { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }

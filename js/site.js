@@ -1,9 +1,9 @@
 // Shared header, footer and mobile menu for every page.
 // Change your name, email and links here once and every page updates.
 const SITE = {
-  name: "Your Name",
-  email: "you@gatech.edu",
-  linkedin: "https://www.linkedin.com/in/your-profile",
+  name: "Alessandro De Cesare",
+  email: "aledece60@gmail.com",
+  linkedin: "https://www.linkedin.com/in/alessandro-de-cesare-a4843a303",
   github: "https://github.com/alegitt",
 };
 

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Nunito, Segoe UI, sans-serif">
+  <rect width="800" height="500" fill="#eaf0f6"/>
+  <!-- maze walls -->
+  <g stroke="#003057" stroke-width="10" stroke-linecap="round" fill="none">
+    <path d="M60 60 H740 V440 H60 Z"/>
+    <path d="M200 60 V300"/><path d="M200 380 V440"/>
+    <path d="M340 140 V440"/><path d="M340 140 H500"/>
+    <path d="M500 60 V80"/><path d="M640 140 V360"/><path d="M500 260 H640"/><path d="M500 260 V360"/>
+  </g>
+  <!-- path taken -->
+  <path d="M130 110 V400 H270 V100 H600 V200 H700 V400 H570" fill="none" stroke="#b3a369" stroke-width="5" stroke-dasharray="10 9"/>
+  <!-- parking spot -->
+  <rect x="535" y="370" width="80" height="60" fill="none" stroke="#eaaa00" stroke-width="4" stroke-dasharray="8 6"/>
+  <text x="575" y="460" text-anchor="middle" font-size="14" fill="#003057">self park</text>
+  <!-- robot -->
+  <g transform="translate(130 110)">
+    <path d="M-60 -10 A62 62 0 0 1 60 -10" fill="none" stroke="#eaaa00" stroke-width="3" opacity=".8"/>
+    <g stroke="#eaaa00" stroke-width="2" opacity=".7">
+      <line x1="0" y1="0" x2="-55" y2="-35"/><line x1="0" y1="0" x2="-30" y2="-55"/><line x1="0" y1="0" x2="0" y2="-62"/><line x1="0" y1="0" x2="30" y2="-55"/><line x1="0" y1="0" x2="55" y2="-35"/>
+    </g>
+    <circle r="32" fill="#1d2430" stroke="#b3a369" stroke-width="4"/>
+    <circle r="12" fill="#003057"/>
+    <circle cy="-22" r="4" fill="#eaaa00"/>
+  </g>
+  <text x="400" y="38" text-anchor="middle" font-family="Oswald, Arial Narrow, sans-serif" font-size="24" fill="#003057" letter-spacing="2">IROBOT CREATE 3 LABS</text>
+  <text x="400" y="488" text-anchor="middle" font-size="13" fill="#5b6270">7 infrared sensors guide the robot through the maze</text>
+</svg>

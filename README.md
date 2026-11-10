@@ -1,12 +1,14 @@
-## Hi there 👋
+## Hi, I'm Alessandro 👋
 
-I'm an Electrical and Computer Engineering student at Georgia Tech. I build hardware projects and make Roblox games under **MrRobot Games**.
+Second year Computer Engineering student at Georgia Tech. I like building things where hardware and software meet.
 
 🌐 **ePortfolio:** https://alegitt.github.io/alegitt/
 
 - 🔧 Discovery Project: a 16 key macro keyboard on a Raspberry Pi Pico
-- 🎮 In development: *Saltborne* and *Huss For Your Life* on Roblox
-- 🌱 Currently learning: digital system design, Java and discrete math
+- 🤖 Programmed an iRobot Create 3 in Python to navigate a maze and self park
+- 🔬 Material Analyst Intern at Birla Carbon (XRF spectrometer research)
+- 🎺 Four time Georgia All State trumpet, former drum major
+- 💼 Looking for software and computer engineering internships
 
 <!-- Site files: index.html, about.html, projects.html, project-macropad.html, resume.html, goals.html.
-     Change your name and links once in js/site.js. Replace the placeholder photos in assets/img and assets/resume.pdf. -->
+     Name and links live in js/site.js. Replace the placeholder photos in assets/img. -->

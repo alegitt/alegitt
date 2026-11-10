@@ -146,3 +146,5 @@ figcaption { font-size: .9rem; color: var(--muted); margin-top: .6rem; text-alig
 .hero-inner { border-bottom: 6px solid var(--gold-deep); }
 .card-body .btn { align-self: flex-start; }
 .hero-inner { grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+.card img[src$='.jpg'] { object-position: center 40%; }
+figure img[src$='.jpg'] { width: 100%; max-height: 620px; object-fit: cover; border-radius: var(--radius); }

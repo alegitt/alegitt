@@ -21,51 +21,46 @@
   <section class="section">
     <div class="narrow">
       <figure>
-        <img src="assets/img/macropad-photo-1.jpg" alt="Photo of my finished macropad">
+        <img src="assets/img/macropad-photo-1.jpg" alt="My finished macropad on my desk">
         <figcaption>The finished macropad on my desk. Photo by me.</figcaption>
       </figure>
 
       <div class="facts">
         <div class="fact"><strong>Brain</strong>Raspberry Pi Pico</div>
-        <div class="fact"><strong>Keys</strong>16 Cherry MX RGB Black switches</div>
+        <div class="fact"><strong>Keys</strong>16 Cherry MX Black switches</div>
         <div class="fact"><strong>Case</strong>3D printed at the Hive</div>
-        <div class="fact"><strong>Connection</strong>USB, shows up as a keyboard</div>
+        <div class="fact"><strong>Connection</strong>USB, works as a keyboard</div>
       </div>
 
       <h2>The Problem</h2>
-      <p>Students do the same computer tasks over and over. I copy and paste code. I switch between windows. I mute and unmute on calls. I take screenshots for lab reports. Each one is a small keyboard shortcut. Many of them need two or three keys at once. Some I forget completely. Over a full day those small moments add up.</p>
-      <p>Store bought macro pads exist but they cost a lot and you cannot see inside them. I wanted a tool that saved me time. I also wanted to understand every part of it. So the question for my project was simple. Can I build my own shortcut keyboard from basic parts and make it work as well as one from a store?</p>
+      <p>Students repeat the same computer tasks all day. Copy and paste. Switch windows. Mute on calls. Take screenshots for lab reports. Each one is a shortcut, and many need two or three keys at once. Store bought macro pads solve this but they cost a lot and you cannot see inside them. My question was simple. Can I build my own shortcut keyboard from basic parts and make it work as well as one from a store?</p>
 
       <h2>The Process</h2>
       <img src="assets/img/design-process.svg" alt="Design thinking loop used for this project">
-      <p>I started with the design. I kept the scope small on purpose. Sixteen keys in a four by four grid. No knobs and no screen. A smaller design meant I could actually finish it and make it work well.</p>
-      <p>Next I picked the parts. I chose a Raspberry Pi Pico because it is cheap, well documented and can act as a USB keyboard. I used a Freenove Pico with headers already soldered on. For keys I picked Cherry MX RGB Black switches. They are linear and a little heavy, so I do not press them by accident. I topped them with black XDA keycaps. A USB A to micro USB cable connects it to my laptop.</p>
-      <p>For the case I used the Parametric Macropad customizer on MakerWorld made by jkrishna. It let me set the grid size and switch spacing for my exact build. I printed it at the Hive makerspace at Georgia Tech. <span class="todo">Add a detail about the print here, like how long it took or anything you had to reprint.</span></p>
+      <p>I kept the design small on purpose. Sixteen keys in a four by four grid, with no knobs or screen. A smaller scope meant I could actually finish it and make it work well.</p>
+      <p>For parts I chose a Raspberry Pi Pico because it is cheap, well documented and can act as a USB keyboard. I used Cherry MX Black switches, which are linear and a little heavy so I do not press them by accident. Black XDA keycaps go on top.</p>
+      <p>I made the case with the Parametric Macropad customizer on MakerWorld by jkrishna and printed it at the Hive makerspace. It prints in two parts. A top plate holds the switches and a bottom tray holds the Pico.</p>
+
+      <figure>
+        <img src="assets/img/macropad-photo-2.jpg" alt="The printed case, the Pico and Cherry MX switches during assembly">
+        <figcaption>Assembly in progress. The top plate with the first switches, the Pico in the bottom tray and the rest of the switches. Photo by me.</figcaption>
+      </figure>
+
+      <p>Each switch is just a button that closes a circuit. I wired the switches to the Pico <span class="todo">with one GPIO pin per key / as a 4x4 matrix</span>. The pins are inputs with pull up resistors, so a pin reads 1 when a key is up and 0 when it is pressed. I programmed the Pico in <span class="todo">CircuitPython / KMK / QMK</span>. The code scans the keys, debounces each press and sends the matching shortcut over USB. The computer sees a normal keyboard, so no drivers are needed.</p>
 
       <figure>
         <img src="assets/img/macropad-system.svg" alt="Block diagram: key switches to GPIO pins to Raspberry Pi Pico to computer over USB">
         <figcaption>How a key press travels from the switch to my laptop.</figcaption>
       </figure>
 
-      <p>Then came the wiring. Each switch is just a button that closes a circuit. I wired the switches to the Pico <span class="todo">with one GPIO pin per key / as a 4x4 matrix</span>. The pins are set as inputs with pull up resistors. That means a pin reads 1 when the key is up and 0 when it is pressed.</p>
-      <p>Last was the code. I programmed the Pico in <span class="todo">CircuitPython / KMK / QMK</span>. The program checks every key many times a second. It debounces each press so one tap does not count twice. Then it looks up which shortcut that key is mapped to and sends it to the computer over USB. The computer thinks it is a normal keyboard. No drivers are needed.</p>
-
-      <figure>
-        <img src="assets/img/macropad-photo-2.jpg" alt="Photo of the macropad during assembly">
-        <figcaption>Wiring the switches during assembly. Photo by me.</figcaption>
-      </figure>
-
       <h2>The Outcome</h2>
-      <p>The finished macropad works. All 16 keys register and each one runs its shortcut. I use it every day for copy, paste, undo, screenshots, media controls and opening my most used apps. Tasks that took two hands and three keys now take one press.</p>
-      <img src="assets/img/macropad-layout.svg" alt="Key map for the macropad">
-      <p><span class="todo">Add a real result here. For example how many shortcuts you set up, what broke during testing and how you fixed it.</span></p>
+      <p>The finished macropad works. All 16 keys register and each one runs its shortcut. I use it every day for copy, paste, undo, screenshots and media controls. Tasks that took two hands now take one press. <span class="todo">Add one real result, like something that broke in testing and how you fixed it.</span></p>
 
       <h2>What I Learned</h2>
-      <p>This project tied my classes together. The pull up inputs and the on and off states are the same digital logic I study in ECE 2020. The code that scans and maps keys is the kind of structured programming I practice in CS 1331. I also learned practical skills you only get by building. I learned how to read a pinout, how to plan a build around real parts and how to debug when the problem could be hardware or software.</p>
-      <p>Most of all I learned to keep scope realistic. A small project that works beats a big one that does not.</p>
+      <p>This project connected my classes to something real. The on and off states of each pin are the same digital logic I study in Digital System Design. I also learned how to read a pinout, plan a build around real parts and debug when the problem could be hardware or software. Most of all I learned to keep scope realistic. A small project that works beats a big one that does not.</p>
 
       <h2>What's Next</h2>
-      <p>I want to add a rotary knob for volume and RGB lighting that changes with each layer of shortcuts. Later I would like to design my own printed circuit board so there are no loose wires at all.</p>
+      <p>I want to add a volume knob and RGB lighting. Later I would like to design my own circuit board so there are no loose wires at all.</p>
 
       <p class="center" style="margin-top:2.5rem"><a class="btn" href="projects.html">Back to All Projects</a></p>
     </div>

@@ -7,30 +7,36 @@
   <meta name="description" content="ePortfolio of Alessandro De Cesare, a Georgia Tech Computer Engineering student. Projects, resume and career goals.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header"></header>
 
   <section class="hero">
-    <div class="hero-inner">
-      <div class="hero-text">
-        <h1 data-site="name">Alessandro De Cesare</h1>
-        <p class="tagline">Engineer <span>~</span> Musician <span>~</span> Leader</p>
+    <div class="hero-grid">
+      <div>
+        <span class="eyebrow">Computer Engineering · Georgia Tech</span>
+        <h1>Alessandro<br>De Cesare</h1>
+        <p>Welcome! I am a second year Computer Engineering student at Georgia Tech. I like to understand how things work and then build them myself. This site shows my projects, my experience and where I want my career to go.</p>
+        <div class="btn-row">
+          <a class="btn solid" href="projects.html">See my projects</a>
+          <a class="btn light" href="resume.html">View resume</a>
+        </div>
       </div>
-      <div class="hero-photo" style="background-image:url('assets/img/headshot.jpg'); background-position: center 20%" role="img" aria-label="Photo of me"></div>
+      <div class="hero-photo">
+        <img src="assets/img/headshot.jpg" alt="Photo of Alessandro De Cesare">
+      </div>
     </div>
   </section>
 
   <section class="section">
-    <div class="container center">
-      <p class="lead">Welcome! I am a second year Computer Engineering student at Georgia Tech. I like to understand how things work and then build them myself. This site shows my projects, my experience and where I want my career to go. Take a look around and see how I could add to your team.</p>
-      <div class="btn-stack">
-        <a class="btn" href="about.html">About Me</a>
-        <a class="btn" href="projects.html">Explore Projects</a>
-        <a class="btn" href="goals.html">Career Goals</a>
-        <a class="btn" href="resume.html">See Resume</a>
+    <div class="container">
+      <div class="tiles">
+        <a class="tile" href="about.html"><span class="num">01</span><strong>About me</strong><p>From El Paso to Georgia Tech, plus music and leadership.</p><span class="arrow">Read more →</span></a>
+        <a class="tile" href="projects.html"><span class="num">02</span><strong>Projects</strong><p>Hardware, software and research I have built.</p><span class="arrow">Explore →</span></a>
+        <a class="tile" href="goals.html"><span class="num">03</span><strong>Career goals</strong><p>Where I am headed and my plan to get there.</p><span class="arrow">See the plan →</span></a>
+        <a class="tile" href="resume.html"><span class="num">04</span><strong>Resume</strong><p>My one page resume to view or download.</p><span class="arrow">Open →</span></a>
       </div>
     </div>
   </section>
@@ -40,17 +46,17 @@
       <img src="assets/img/macropad-photo-1.jpg" alt="My finished 16 key macropad" style="aspect-ratio:4/3; object-fit:cover; width:100%">
       <div>
         <span class="tag feature">Discovery Project</span>
-        <h2>A Keyboard Built From Scratch</h2>
+        <h2>A keyboard built from scratch</h2>
         <p>For my Discovery Project I designed and built a 16 key macro keyboard. It runs on a Raspberry Pi Pico and lives in a case I 3D printed at the Hive makerspace. One press of a key runs a whole shortcut on my laptop.</p>
         <p>It taught me how hardware and code meet. Switches become signals. Signals become logic. Logic becomes something useful.</p>
-        <a class="btn solid" href="project-macropad.html">Read the Project Feature</a>
+        <a class="btn" href="project-macropad.html">Read the project feature</a>
       </div>
     </div>
   </section>
 
   <section class="section">
     <div class="container">
-      <h2 class="center">What I Bring</h2>
+      <h2>What I bring</h2>
       <div class="facts">
         <div class="fact"><strong>Hardware</strong>Microcontrollers, digital logic, wiring and 3D printing.</div>
         <div class="fact"><strong>Software</strong>Java, Python and LaTeX. Robot control code and object oriented design.</div>

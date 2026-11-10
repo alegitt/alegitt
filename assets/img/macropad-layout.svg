@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="Nunito, Segoe UI, sans-serif">
   <rect width="800" height="500" fill="#eaf0f6"/>
-  <text x="400" y="44" text-anchor="middle" font-family="Oswald, Arial Narrow, sans-serif" font-size="26" fill="#003057" letter-spacing="2">MACROPAD TOP VIEW</text>
+  <text x="400" y="44" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="26" fill="#003057">Macropad top view</text>
   <!-- case -->
   <rect x="215" y="75" width="370" height="380" rx="22" fill="#1d2430"/>
   <rect x="230" y="90" width="340" height="350" rx="14" fill="#2b3442"/>

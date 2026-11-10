@@ -9,10 +9,10 @@ const SITE = {
 
 const PAGES = [
   ["index.html", "Home"],
-  ["about.html", "About Me"],
+  ["about.html", "About"],
   ["projects.html", "Projects"],
-  ["resume.html", "Resume"],
   ["goals.html", "Career Goals"],
+  ["resume.html", "Resume", "cta"],
 ];
 
 (function () {
@@ -21,11 +21,13 @@ const PAGES = [
 
   const header = document.querySelector(".site-header");
   if (header) {
-    const links = PAGES.map(([href, label]) =>
-      `<a href="${href}"${href === current ? ' class="active"' : ""}>${label}</a>`).join("");
+    const links = PAGES.map(([href, label, cls]) => {
+      const classes = [cls, href === current ? "active" : ""].filter(Boolean).join(" ");
+      return `<a href="${href}"${classes ? ` class="${classes}"` : ""}>${label}</a>`;
+    }).join("");
     header.innerHTML = `
       <nav class="nav">
-        <a class="nav-brand" href="index.html">${SITE.name}</a>
+        <a class="nav-brand" href="index.html">${SITE.name}<span>.</span></a>
         <button class="nav-toggle" aria-label="Open menu">Menu</button>
         <div class="nav-links">${links}</div>
       </nav>`;
@@ -36,18 +38,18 @@ const PAGES = [
   const footer = document.querySelector(".site-footer");
   if (footer) {
     footer.innerHTML = `
-      <h2>Let's Connect</h2>
-      <p>I am always happy to talk about projects, internships and research.</p>
-      <div class="links">
-        <a href="mailto:${SITE.email}">${SITE.email}</a>
-        <a href="${SITE.linkedin}" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="${SITE.github}" target="_blank" rel="noopener">GitHub</a>
+      <div class="footer-grid">
+        <div>
+          <h2>Let's connect</h2>
+          <p>Always happy to talk about projects, internships and research.</p>
+          <p>${SITE.email}</p>
+        </div>
+        <div class="links">
+          <a href="mailto:${SITE.email}">Email</a>
+          <a href="${SITE.linkedin}" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="${SITE.github}" target="_blank" rel="noopener">GitHub</a>
+        </div>
       </div>
-      <small>&copy; ${new Date().getFullYear()} ${SITE.name}. Georgia Institute of Technology.</small>`;
+      <small>&copy; ${new Date().getFullYear()} ${SITE.name} · Georgia Institute of Technology</small>`;
   }
-
-  document.querySelectorAll("[data-site]").forEach((el) => {
-    el.textContent = SITE[el.dataset.site];
-  });
-  document.title = document.title.replace("Your Name", SITE.name);
 })();

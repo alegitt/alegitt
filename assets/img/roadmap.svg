@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 230" font-family="Nunito, Segoe UI, sans-serif">
   <rect width="900" height="230" fill="#ffffff"/>
-  <text x="450" y="40" text-anchor="middle" font-family="Oswald, Arial Narrow, sans-serif" font-size="24" fill="#003057" letter-spacing="2">MY ROADMAP</text>
+  <text x="450" y="40" text-anchor="middle" font-family="DM Serif Display, Georgia, serif" font-size="24" fill="#003057">My roadmap</text>
   <line x1="80" y1="120" x2="820" y2="120" stroke="#d3dde8" stroke-width="8" stroke-linecap="round"/>
   <line x1="80" y1="120" x2="265" y2="120" stroke="#eaaa00" stroke-width="8" stroke-linecap="round"/>
   <g text-anchor="middle">

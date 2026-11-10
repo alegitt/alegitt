@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robotics Lab: Maze Solver | Alessandro De Cesare</title>
+  <link rel="stylesheet" href="css/style.css?v=4">
+</head>
+<body>
+  <header class="site-header"></header>
+
+  <section class="banner">
+    <div><span class="tag feature">Software</span> <span class="tag">Robotics</span></div>
+    <h1>Robotics Lab: Maze Solver</h1>
+    <p>CS 1301 Intro to Computing. Spring 2026. Python on an iRobot Create 3.</p>
+  </section>
+
+  <section class="section">
+    <div class="narrow">
+      <div class="facts">
+        <div class="fact"><strong>Robot</strong>iRobot Create 3</div>
+        <div class="fact"><strong>Language</strong>Python</div>
+        <div class="fact"><strong>Team</strong>Partner project with a live demo</div>
+        <div class="fact"><strong>Result</strong>Perfect scores on all four labs</div>
+      </div>
+
+      <h2>The Lab</h2>
+      <p>Over the semester I completed four robotics labs. The last one was the hardest. My partner and I had to program the robot to escape a maze it had never seen. It had no map. It had to find the walls on its own, choose its path as it went and reach the exit without crashing.</p>
+
+      <h2>How It Works</h2>
+      <p>We built the maze as objects in Python. A <strong>Cell</strong> class stores each square's position, its open neighbors, whether it has been visited and its cost. A <strong>Maze</strong> class holds every cell and decides where to go next. Each cell's cost is how many steps it is from the exit.</p>
+      <p>After every move the robot runs the same loop. It reads its left, front and right infrared sensors to find walls. It removes any blocked paths from its map. A flood fill step recomputes the costs. Then it turns toward the cheapest neighbor it has not visited yet and drives one cell. For safety, a bump or a button press stops the robot and turns its light solid red. When it reaches the exit, it stops and spins a green light.</p>
+
+      <h3>Watch it solve a maze</h3>
+      <p>Step through the example below. The left map is what the robot knows. The right map is the real maze.</p>
+      <div id="maze-demo" class="maze-demo"></div>
+
+      <h2>What I Learned</h2>
+      <p>The big lesson was to break a hard problem into small pieces. We wrote and tested each helper function on its own before putting it on the robot. That made bugs much easier to find. I also saw that the shortest route is not always the one you take first. The robot only knows what it has sensed so far, so it has to adapt as it learns.</p>
+
+      <p class="center" style="margin-top:2.5rem"><a class="btn" href="projects.html">Back to all projects</a></p>
+    </div>
+  </section>
+
+  <footer class="site-footer"></footer>
+  <script src="js/site.js?v=4"></script>
+  <script src="js/maze-demo.js?v=4"></script>
+</body>
+</html>

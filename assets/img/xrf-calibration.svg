@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" font-family="Times New Roman, Times, serif">
+  <rect width="800" height="480" fill="#ffffff"/>
+  <text x="400" y="40" text-anchor="middle" font-size="26" font-weight="700" fill="#003057">Finding the bad standard</text>
+  <!-- axes -->
+  <g stroke="#1d2430" stroke-width="2"><line x1="90" y1="400" x2="740" y2="400"/><line x1="90" y1="400" x2="90" y2="70"/></g>
+  <text x="415" y="440" text-anchor="middle" font-size="18" fill="#5b6270">Known sulfur content</text>
+  <text x="45" y="235" text-anchor="middle" font-size="18" fill="#5b6270" transform="rotate(-90 45 235)">XRF reading</text>
+  <!-- good fit line -->
+  <line x1="110" y1="388" x2="720" y2="92" stroke="#003057" stroke-width="3"/>
+  <!-- old skewed fit -->
+  <line x1="110" y1="350" x2="720" y2="110" stroke="#b3a369" stroke-width="3" stroke-dasharray="9 7"/>
+  <!-- standards -->
+  <g fill="#003057">
+    <circle cx="260" cy="315" r="9"/><circle cx="400" cy="248" r="9"/><circle cx="540" cy="180" r="9"/><circle cx="680" cy="112" r="9"/>
+  </g>
+  <!-- outlier -->
+  <circle cx="140" cy="300" r="11" fill="none" stroke="#c0392b" stroke-width="3"/>
+  <line x1="131" y1="291" x2="149" y2="309" stroke="#c0392b" stroke-width="3"/><line x1="149" y1="291" x2="131" y2="309" stroke="#c0392b" stroke-width="3"/>
+  <line x1="143" y1="288" x2="150" y2="150" stroke="#c0392b" stroke-width="2"/>
+  <text x="158" y="110" font-size="17" fill="#c0392b" font-weight="700">Lowest sulfur standard</text>
+  <text x="158" y="130" font-size="15" fill="#5b6270">worst match to its own curve,</text><text x="158" y="148" font-size="15" fill="#5b6270">so I removed it</text>
+  <!-- legend -->
+  <g font-size="16" fill="#1d2430">
+    <line x1="470" y1="345" x2="510" y2="345" stroke="#b3a369" stroke-width="3" stroke-dasharray="9 7"/><text x="520" y="350">Curve with the bad standard</text>
+    <line x1="470" y1="372" x2="510" y2="372" stroke="#003057" stroke-width="3"/><text x="520" y="377">Curve after removing it</text>
+  </g>
+  <text x="400" y="470" text-anchor="middle" font-size="14" fill="#5b6270">Illustration of what happened. Not real company data.</text>
+</svg>

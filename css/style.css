@@ -158,3 +158,15 @@ figcaption { font-size: .9rem; color: var(--muted); margin-top: .6rem; text-alig
 @media (max-width: 520px) { .tiles { grid-template-columns: 1fr; } }
 .section.alt .tag:not(.feature) { background: var(--white); }
 .cards { align-items: start; }
+
+/* Maze walkthrough on the robotics page */
+.maze-demo { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.5rem; margin: 2rem 0; }
+.maze-panels { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+.maze-title { text-align: center; font-weight: 700; color: var(--navy); margin-bottom: .3rem; }
+.maze-panels svg { width: 100%; height: auto; font-family: var(--body); }
+.maze-caption { min-height: 3.4em; margin: 1rem 0; text-align: center; }
+.maze-controls { display: flex; justify-content: center; align-items: center; gap: 1rem; }
+.maze-controls .btn { cursor: pointer; font-family: var(--body); }
+.maze-controls .btn:disabled { opacity: .35; cursor: default; }
+.maze-count { color: var(--muted); min-width: 7em; text-align: center; }
+@media (max-width: 600px) { .maze-panels { grid-template-columns: 1fr; } }

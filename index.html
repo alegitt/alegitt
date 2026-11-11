@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Alessandro De Cesare | ePortfolio</title>
   <meta name="description" content="ePortfolio of Alessandro De Cesare, a Georgia Tech Computer Engineering student. Projects, resume and career goals.">
-  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
   <header class="site-header"></header>
@@ -22,7 +22,7 @@
         </div>
       </div>
       <div class="hero-photo">
-        <img src="assets/img/headshot.jpg?v=5" alt="Photo of Alessandro De Cesare">
+        <img src="assets/img/headshot.jpg?v=6" alt="Photo of Alessandro De Cesare">
       </div>
     </div>
   </section>
@@ -39,15 +39,44 @@
   </section>
 
   <section class="section alt">
-    <div class="container split">
-      <img src="assets/img/macropad-photo-1.jpg?v=5" alt="My finished 16 key macropad" style="aspect-ratio:4/3; object-fit:cover; width:100%">
-      <div>
-        <span class="tag feature">Discovery Project</span><span class="tag">In Progress</span>
-        <h2>A keyboard built from scratch</h2>
-        <p>For my Discovery Project I am building a 16 key macro keyboard. It runs on a Raspberry Pi Pico inside a case I 3D printed at the Hive makerspace. When it is done, one press of a key will run a whole shortcut on my laptop.</p>
-        <p>It is teaching me how hardware and code meet. Switches become signals. Signals become logic. Logic becomes something useful.</p>
-        <a class="btn" href="project-macropad.html">Read the project feature</a>
+    <div class="container">
+      <h2>Featured projects</h2>
+      <div class="slider" aria-roledescription="carousel">
+        <button class="slider-arrow prev" aria-label="Previous project">‹</button>
+        <div class="slider-window">
+        <div class="slider-track">
+          <div class="slide split">
+            <img src="assets/img/macropad-photo-1.jpg?v=6" alt="My 16 key macropad in progress">
+            <div>
+              <span class="tag feature">Discovery Project</span><span class="tag">In Progress</span>
+              <h3>A keyboard built from scratch</h3>
+              <p>For my Discovery Project I am building a 16 key macro keyboard. It runs on a Raspberry Pi Pico inside a case I 3D printed at the Hive makerspace. When it is done, one press of a key will run a whole shortcut on my laptop.</p>
+              <a class="btn" href="project-macropad.html">Read the project feature</a>
+            </div>
+          </div>
+          <div class="slide split">
+            <img src="assets/img/xrf-photo.jpg?v=6" alt="The XRF analyzer I calibrated at Birla Carbon">
+            <div>
+              <span class="tag feature">Internship</span><span class="tag">Research</span>
+              <h3>XRF calibration at Birla Carbon</h3>
+              <p>I calibrated an XRF spectrometer to measure sulfur in oil. When the results kept coming out wrong, I stepped back, found a bad standard and fixed the calibration. Then I wrote a method the company can reuse.</p>
+              <a class="btn" href="project-xrf.html">Read more</a>
+            </div>
+          </div>
+          <div class="slide split">
+            <img src="assets/img/robot-maze.svg?v=6" alt="The lab maze with the iRobot at the START" class="contain">
+            <div>
+              <span class="tag feature">Software</span><span class="tag">Robotics</span>
+              <h3>Robotics lab: maze solver</h3>
+              <p>My partner and I programmed an iRobot Create 3 in Python to map and escape a maze it had never seen. We earned perfect scores on all four labs.</p>
+              <a class="btn" href="project-robotics.html">Read more</a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <button class="slider-arrow next" aria-label="Next project">›</button>
       </div>
+      <div class="slider-dots"></div>
     </div>
   </section>
 
@@ -64,6 +93,7 @@
   </section>
 
   <footer class="site-footer"></footer>
-  <script src="js/site.js?v=5"></script>
+  <script src="js/site.js?v=6"></script>
+  <script src="js/slider.js?v=6"></script>
 </body>
 </html>

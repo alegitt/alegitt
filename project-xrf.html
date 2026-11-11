@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>XRF Calibration at Birla Carbon | Alessandro De Cesare</title>
-  <link rel="stylesheet" href="css/style.css?v=5">
+  <link rel="stylesheet" href="css/style.css?v=6">
 </head>
 <body>
   <header class="site-header"></header>
@@ -18,7 +18,7 @@
   <section class="section">
     <div class="narrow">
       <figure>
-        <img src="assets/img/xrf-photo.jpg?v=5" alt="The Rigaku NEX QC XRF analyzer showing sulfur in oil results">
+        <img src="assets/img/xrf-photo.jpg?v=6" alt="The Rigaku NEX QC XRF analyzer showing sulfur in oil results">
         <figcaption>The XRF analyzer I calibrated, showing a sulfur in oil test. Photo by me.</figcaption>
       </figure>
 
@@ -33,7 +33,7 @@
       <p>Birla Carbon makes carbon black from oil. The amount of sulfur in that oil matters for environmental reasons, so the company needs a reliable way to measure it. They had an X-ray fluorescence (XRF) spectrometer that could do the job. My task was to calibrate it so it could measure sulfur in oil accurately. I also checked its accuracy against a combustion based method.</p>
 
       <h2>The Process</h2>
-      <img src="assets/img/xrf.svg?v=5" alt="Illustration of an XRF spectrum with a sulfur peak">
+      <img src="assets/img/xrf.svg?v=6" alt="Illustration of an XRF spectrum with a sulfur peak">
       <p>An XRF machine hits a sample with X-rays. Each element in the sample gives off X-rays at its own energy. The stronger the sulfur signal, the more sulfur is in the sample. But the machine needs a calibration curve to turn that signal into a real number.</p>
       <p>To build the curve, I measured oils with known sulfur content. I plotted what the machine read against the known value for each one. If everything is right, the points fall on a clean line that the machine can use for any new sample.</p>
 
@@ -41,7 +41,7 @@
       <p>My curve did not come out clean. It had mistakes, and at times it was not very accurate. I tried over and over, and I stayed stuck for a while.</p>
       <p>What finally worked was taking a step back. Instead of trying again, I tested the curve itself. I measured each known oil against its own calibration curve. A good curve should give back each oil's labeled value. Most came back close. The oil with the smallest amount of sulfur had the worst results by far.</p>
       <figure>
-        <img src="assets/img/xrf-calibration.svg?v=5" alt="Calibration curve with one low sulfur standard marked as the outlier">
+        <img src="assets/img/xrf-calibration.svg?v=6" alt="Calibration curve with one low sulfur standard marked as the outlier">
         <figcaption>One bad standard pulled the whole curve off. Removing it fixed the calibration.</figcaption>
       </figure>
       <p>There were two likely reasons. XRF can struggle with very small amounts of an element, and that sample had very little sulfur. Its label could also have been slightly wrong. Either way, it did not belong in the curve. I removed it and rebuilt the calibration, and it worked great afterwards.</p>
@@ -57,6 +57,6 @@
   </section>
 
   <footer class="site-footer"></footer>
-  <script src="js/site.js?v=5"></script>
+  <script src="js/site.js?v=6"></script>
 </body>
 </html>
